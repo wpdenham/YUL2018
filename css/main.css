@@ -1,0 +1,115 @@
+/*SITE COLOR PALLETE
+
+	light grey - #dadcdb;
+	dark purple - #403e4e;
+	light blue/green - #93a6b1;
+	light purple - #9a9fb6;
+
+*/
+
+/*BEGIN GENERAL STYLING*/
+
+*,html,body {
+	padding: 0;
+	margin: 0;
+	font-size: 10px;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	/*background-color: #403e4e;*/
+}
+
+
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+/*END GENERAL STYLING*/
+
+/*BEGIN NAV STYLING*/
+
+nav {
+	height: 5rem;
+	width: 100%;
+	background-color: rgba(154,159,182,.7);
+	box-shadow: 0px 2px 2px rgba(0,0,0,.4);
+	position: fixed;
+}
+
+nav img {
+	padding: .5rem;
+	margin-right: 4rem;
+	float: left;
+}
+
+nav ul {
+	list-style-type: none;
+}
+
+nav ul li {
+	display: inline-block;
+	float: left;
+	margin-right: 4rem;
+	margin-top: 1.5rem;
+}
+
+nav ul li a {
+	font-size: 1.75rem;
+	text-decoration: none;
+	color: #dadcdb;
+	transition: .4s ease-in-out;
+}
+
+nav ul li a:hover {
+	color: #403e4e;
+}
+
+.dropdown {
+	display: none;
+}
+
+.booknow {
+	float: right;
+	margin-top: .75rem;
+	font-size: 1.75rem;
+	text-decoration: none;
+	border: 1px solid white;
+	padding: .5rem 2rem;
+	border-radius: 2rem;
+
+}
+
+/*END NAV STYLING*/
+
+/*BEGIN HERO STYLING*/
+
+.hero {
+	height: 100vh;
+	width: 100%;
+	background-color: #403e4e;
+	background-image: url(../assets/road1.jpg);
+	background-repeat: no-repeat;
+	background-blend-mode: soft-light;
+	background-size: cover;
+	background-position: center;
+}
+
+.hero h1 {
+	font-size: 8rem;
+	font-weight: 400;
+	text-shadow: 0px 4px 1px rgba(0,0,0,.3);
+	color: #dadcdb;
+	text-align: center;
+	padding-top: 30rem;
+	padding-bottom: 3rem;
+}
+
+.hero a {
+	float: left;
+	width: 15%;
+	font-size: 3rem;
+	color: #dadcdb;
+}
+
+/*END HERO STYLING*/
