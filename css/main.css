@@ -25,6 +25,45 @@
 
 /*END GENERAL STYLING*/
 
+/* BEGIN CUSTOM SCROLLBAR STYLING*/
+
+/* width */
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+    background: #9a9fb6; 
+    border-radius: 55px;
+    
+}
+
+body::-webkit-scrollbar-button {
+	display: none;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+    background: #403e4e; 
+    border-radius: 55px;
+    
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+    background: #403e4e; 
+    border-radius: 55px;
+}
+
+body::-webkit-scrollbar-corner {
+    background: #403e4e; 
+    border-radius: 55px;
+}
+
+/* END CUSTOM SCROLLBAR STYLING*/
+
+
 /*BEGIN NAV STYLING*/
 
 nav {
@@ -92,6 +131,7 @@ nav ul li a:hover {
 	background-blend-mode: soft-light;
 	background-size: cover;
 	background-position: center;
+	background-attachment: fixed;
 	position: relative;
 
 }
@@ -128,19 +168,15 @@ nav ul li a:hover {
 
 /*BEGIN INTRO SECTION STYLING*/
 
-/*.intro::before {
-	content: '';
+.skewintro {
 	width: 100%;
-	height: 20%;
-	background-color: #dadcdb;
-	position: absolute;
-	z-index: 1;
-	top: 0%;
-	-webkit-transform-origin: left top;
-	        transform-origin: left top;
-	-webkit-transform: skewY(-2deg);
-	        transform: skewY(-2deg);
-}*/
+	height: 80rem;
+	content: '';
+	-webkit-transform-origin: top left;
+	        transform-origin: top left;
+	-webkit-transform: skewY(-3deg);
+	        transform: skewY(-3deg);
+}
 
 .intro {
 	background-color: #dadcdb;
@@ -149,26 +185,11 @@ nav ul li a:hover {
 	background-repeat: no-repeat;
 	background-blend-mode: soft-light;
 	background-position: bottom bottom;
-	height: auto;
+	height: 100rem;
 	padding: 7rem 0 15rem 0;
 	position: relative;
+	
 }
-
-/*.intro::before {
-	content: '';
-	width: 100%;
-	height: 12rem;
-	background-color: #dadcdb;
-	position: absolute;
-	left: 0;
-	z-index: 1;
-	top: 0;
-	-webkit-transform-origin: top left;
-	        transform-origin: top left;
-	-webkit-transform: skewY(-3deg);
-	        transform: skewY(-3deg);
-}*/
-
 
 .intro h3 {
 	font-size: 5.5rem;
@@ -178,8 +199,11 @@ nav ul li a:hover {
 	padding-bottom: 5rem;
 	position: relative;
 	z-index: 4;
+	-webkit-transform-origin: top left;
+	        transform-origin: top left;
+	-webkit-transform: skewY(3deg);
+	        transform: skewY(3deg);
 }
-
 
 .content {
 	display: -ms-grid;
@@ -190,6 +214,10 @@ nav ul li a:hover {
 	width: 90%;
 	margin: 0 auto;
 	text-align: center;
+	-webkit-transform-origin: top left;
+	        transform-origin: top left;
+	-webkit-transform: skewY(3deg);
+	        transform: skewY(3deg);
 }
 
 .content h4 {
@@ -214,32 +242,6 @@ nav ul li a:hover {
 
 /*BEGIN MAIN SECTION STYLING*/
 
-.main h3 {
-	font-size: 5.5rem;
-	color: #93a6b1;
-	font-weight: 400;
-	padding-bottom: 0;
-	z-index: 999;
-}
-
-.main h4 {
-	font-size: 2rem;
-	font-weight: 400;
-	color: #9a9fb6;
-	border-top: 2px solid #9a9fb6;
-	margin-left: 3rem;
-	margin-right: 15rem;
-	margin-top: -.5rem;
-	padding-bottom: 3rem;
-}
-
-.main p {
-	width: 95%;
-	font-size: 2rem;
-	color: #93a6b1;
-	line-height: 5rem;
-}
-
 p.available {
 	font-size: 1.5rem;
 	color: #9a9fb6;
@@ -248,25 +250,19 @@ p.available {
 	padding-bottom: 2rem;
 }
 
-.main a {
-	color: #93a6b1;
-	border: 2px solid #93a6b1;
-	border-radius: 1rem;
-	text-decoration: none;
-	font-size: 2rem;
-	padding: .5rem 4rem;
-	transition: .5s ease-in-out;
-}
-
-.main a:hover {
-	border-radius: 3rem;
-	background-color: #93a6b1;
-	color: #dadcdb;
-}
-
 /*END MAIN SECTION STYLING*/
 
 /*BEGIN THE CABIN SECTION STYLING*/
+
+.skewcabin {
+	width: 100%;
+	height: 100rem;
+	content: '';
+	-webkit-transform-origin: bottom right;
+	        transform-origin: bottom right;
+	-webkit-transform: skewY(3deg);
+	        transform: skewY(3deg);
+}
 
 .cabinmain {
 	background-color: #93a6b1;
@@ -275,7 +271,9 @@ p.available {
 	background-repeat: no-repeat;
 	background-blend-mode: soft-light;
 	background-position: bottom bottom;
+	background-attachment: fixed;
 	padding: 5rem 0;
+	height: 120rem;
 }
 
 .cabin::before {
@@ -288,17 +286,22 @@ p.available {
 	left: 0;
 	-webkit-transform-origin: bottom left ;
 	        transform-origin: bottom left ;
-	-webkit-transform: skewY(-5deg);
-	        transform: skewY(-5deg);
+	-webkit-transform: skewY(-6deg);
+	        transform: skewY(-6deg);
 	        border-radius: 3rem 0 0 0;
 }
 
 .cabin {
+	margin-top: -3rem;
 	width: 40%;
 	background-color: #dadcdb;
 	padding: 9rem 3rem 12rem 6rem;
 	padding-left: 6rem;
 	position: relative;
+	-webkit-transform-origin: bottom right;
+	        transform-origin: bottom right;
+	-webkit-transform: skewY(-3deg);
+	        transform: skewY(-3deg);
 }
 
 .cabin::after {
@@ -311,14 +314,75 @@ p.available {
 	left: 0;
 	-webkit-transform-origin: top left ;
 	        transform-origin: top left ;
-	-webkit-transform: skewY(5deg);
-	        transform: skewY(5deg);
+	-webkit-transform: skewY(6deg);
+	        transform: skewY(6deg);
 	border-radius: 0 0 0 3rem;
+	box-shadow: 0px 5px 3px 0px rgba(0,0,0,.2); 
+}
+
+.cabin h3 {
+	font-size: 5.5rem;
+	color: #93a6b1;
+	font-weight: 400;
+	padding-bottom: 0;
+	z-index: 999;
+}
+
+.cabin h4 {
+	font-size: 2rem;
+	font-weight: 400;
+	color: #9a9fb6;
+	border-top: 2px solid #9a9fb6;
+	margin-left: 3rem;
+	margin-right: 15rem;
+	margin-top: -.5rem;
+	padding-bottom: 3rem;
+}
+
+.cabin p {
+	width: 95%;
+	font-size: 2rem;
+	color: #93a6b1;
+	line-height: 5rem;
+}
+
+.cabin p.available {
+	font-size: 1.5rem;
+	color: #9a9fb6;
+	line-height: 2rem;
+	padding-top: 10rem;
+	padding-bottom: 2rem;
+}
+
+.cabin a {
+	color: #93a6b1;
+	border: 2px solid #93a6b1;
+	border-radius: 1rem;
+	text-decoration: none;
+	font-size: 2rem;
+	padding: .5rem 4rem;
+	transition: .5s ease-in-out;
+}
+
+.cabin a:hover {
+	border-radius: 3rem;
+	background-color: #93a6b1;
+	color: #dadcdb;
 }
 
 /*END THE CABIN SECTION STYLING*/
 
 /*BEGIN THE SLOPES SECTION STYLING*/
+
+.skewslopes {
+	width: 100%;
+	height: 110rem;
+	content: '';
+	-webkit-transform-origin: bottom right;
+	        transform-origin: bottom right;
+	-webkit-transform: skewY(-3deg);
+	        transform: skewY(-3deg);
+}
 
 .slopesmain {
 	background-color: #403e4e;
@@ -327,8 +391,10 @@ p.available {
 	background-repeat: no-repeat;
 	/*background-attachment: fixed;*/
 	background-blend-mode: soft-light;
-	background-position: bottom bottom;
+	background-position: bottom;
+	height: 120rem;
 	padding: 5rem 0;
+
 }
 
 .slopes::before {
@@ -340,20 +406,23 @@ p.available {
 	top: -5rem;
 	left: 0;
 	-webkit-transform-origin: bottom right;
-	        transform-origin: bottom right  ;
-	-webkit-transform: skewY(5deg);
-	        transform: skewY(5deg);
+	        transform-origin: bottom right;
+	-webkit-transform: skewY(6deg);
+	        transform: skewY(6deg);
 	        border-radius: 0 3rem 0 0;
 }
 
 .slopes {
-	margin-left: 90rem;
-	box-shadow: 0px 5px 5px rgba(0,0,0,.4);
-	width: 40%;
+	width: 33%;
 	background-color: #dadcdb;
 	padding: 9rem 3rem 12rem 6rem;
 	padding-left: 6rem;
-	position: relative;
+	position: absolute;
+	right: 10%;
+	-webkit-transform-origin: bottom right;
+	        transform-origin: bottom right;
+	-webkit-transform: skewY(3deg);
+	        transform: skewY(3deg);
 }
 
 .slopes::after {
@@ -366,15 +435,76 @@ p.available {
 	left: 0;
 	-webkit-transform-origin: right top ;
 	        transform-origin: right top ;
-	-webkit-transform: skewY(-5deg);
-	        transform: skewY(-5deg);
+	-webkit-transform: skewY(-6deg);
+	        transform: skewY(-6deg);
 	border-radius: 0 0 3rem 0;
+	box-shadow: 0px 5px 3px 0px rgba(0,0,0,.2); 
+}
+
+.slopes h3 {
+	font-size: 5.5rem;
+	color: #93a6b1;
+	font-weight: 400;
+	padding-bottom: 0;
+	z-index: 999;
+}
+
+.slopes h4 {
+	font-size: 2rem;
+	font-weight: 400;
+	color: #9a9fb6;
+	border-top: 2px solid #9a9fb6;
+	margin-left: 3rem;
+	margin-right: 15rem;
+	margin-top: -.5rem;
+	padding-bottom: 3rem;
+}
+
+.slopes p {
+	width: 95%;
+	font-size: 2rem;
+	color: #93a6b1;
+	line-height: 5rem;
+}
+
+.slopes p.available {
+	font-size: 1.5rem;
+	color: #9a9fb6;
+	line-height: 2rem;
+	padding-top: 10rem;
+	padding-bottom: 2rem;
+}
+
+.slopes a {
+	color: #93a6b1;
+	border: 2px solid #93a6b1;
+	border-radius: 1rem;
+	text-decoration: none;
+	font-size: 2rem;
+	padding: .5rem 4rem;
+	transition: .5s ease-in-out;
+}
+
+.slopes a:hover {
+	border-radius: 3rem;
+	background-color: #93a6b1;
+	color: #dadcdb;
 }
 
 /*END THE SLOPES SECTION STYLING*/
 
 
 /*BEGIN THE TOWN SECTION STYLING*/
+
+.skewtown {
+	width: 100%;
+	height: 100rem;
+	content: '';
+	-webkit-transform-origin: bottom right;
+	        transform-origin: bottom right;
+	-webkit-transform: skewY(3deg);
+	        transform: skewY(3deg);
+}
 
 .townmain {
 	background-color: #93a6b1;
@@ -383,7 +513,9 @@ p.available {
 	background-repeat: no-repeat;
 	background-blend-mode: soft-light;
 	background-position: bottom bottom;
+	background-attachment: fixed;
 	padding: 5rem 0;
+	height: 120rem;
 	
 }
 
@@ -397,9 +529,10 @@ p.available {
 	left: 0;
 	-webkit-transform-origin: bottom left ;
 	        transform-origin: bottom left ;
-	-webkit-transform: skewY(-5deg);
-	        transform: skewY(-5deg);
+	-webkit-transform: skewY(-6deg);
+	        transform: skewY(-6deg);
 	        border-radius: 3rem 0 0 0;
+	/*box-shadow: 0px 3px 2px 0px rgba(0,0,0,.4); */
 }
 
 .town {
@@ -408,6 +541,10 @@ p.available {
 	padding: 9rem 3rem 12rem 6rem;
 	padding-left: 6rem;
 	position: relative;
+	-webkit-transform-origin: bottom left;
+	        transform-origin: bottom left;
+	-webkit-transform: skewY(-3deg);
+	        transform: skewY(-3deg);
 }
 
 .town::after {
@@ -420,9 +557,216 @@ p.available {
 	left: 0;
 	-webkit-transform-origin: top left ;
 	        transform-origin: top left ;
-	-webkit-transform: skewY(5deg);
-	        transform: skewY(5deg);
+	-webkit-transform: skewY(6deg);
+	        transform: skewY(6deg);
 	border-radius: 0 0 0 3rem;
+	box-shadow: 0px 5px 3px 0px rgba(0,0,0,.2); 
 }
 
-/*END THE TOWN SECTION STYLING*/}}
+.town h3 {
+	font-size: 5.5rem;
+	color: #93a6b1;
+	font-weight: 400;
+	padding-bottom: 0;
+	z-index: 999;
+}
+
+.town h4 {
+	font-size: 2rem;
+	font-weight: 400;
+	color: #9a9fb6;
+	border-top: 2px solid #9a9fb6;
+	margin-left: 3rem;
+	margin-right: 15rem;
+	margin-top: -.5rem;
+	padding-bottom: 3rem;
+}
+
+.town p {
+	width: 95%;
+	font-size: 2rem;
+	color: #93a6b1;
+	line-height: 5rem;
+}
+
+.town p.available {
+	font-size: 1.5rem;
+	color: #9a9fb6;
+	line-height: 2rem;
+	padding-top: 10rem;
+	padding-bottom: 2rem;
+}
+
+.town a {
+	color: #93a6b1;
+	border: 2px solid #93a6b1;
+	border-radius: 1rem;
+	text-decoration: none;
+	font-size: 2rem;
+	padding: .5rem 4rem;
+	transition: .5s ease-in-out;
+}
+
+.town a:hover {
+	border-radius: 3rem;
+	background-color: #93a6b1;
+	color: #dadcdb;
+}
+
+/*END THE TOWN SECTION STYLING*/
+
+/*BEGIN THE GIFT SECTION STYLING*/
+
+.skewgift {
+	width: 100%;
+	height: 70rem;
+	content: '';
+	-webkit-transform-origin: bottom right;
+	        transform-origin: bottom right;
+	-webkit-transform: skewY(-3deg);
+	        transform: skewY(-3deg);
+	margin-bottom: 10rem;
+}
+
+.giftmain {
+	background-color: #403e4e;
+	background-image: url(../assets/gift1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	/*background-attachment: fixed;*/
+	background-blend-mode: soft-light;
+	background-position: left center;
+	height: 85rem;
+	padding: 5rem 0;
+
+}
+
+.gift::before {
+	content: '';
+	width: 100%;
+	height: 15rem;
+	background-color: #dadcdb;
+	position: absolute;
+	top: -5rem;
+	left: 0;
+	-webkit-transform-origin: bottom right;
+	        transform-origin: bottom right;
+	-webkit-transform: skewY(6deg);
+	        transform: skewY(6deg);
+	        border-radius: 0 3rem 0 0;
+}
+
+.gift {
+	width: 33%;
+	height: 50rem;
+	background-color: #dadcdb;
+	padding: 9rem 3rem 12rem 6rem;
+	padding-left: 6rem;
+	position: absolute;
+	right: 10%;
+	-webkit-transform-origin: bottom right;
+	        transform-origin: bottom right;
+	-webkit-transform: skewY(3deg);
+	        transform: skewY(3deg);
+}
+
+.gift::after {
+	content: '';
+	width: 100%;
+	height: 15rem;
+	background-color: #dadcdb;
+	position: absolute;
+	bottom: -5rem;
+	left: 0;
+	-webkit-transform-origin: right top ;
+	        transform-origin: right top ;
+	-webkit-transform: skewY(-6deg);
+	        transform: skewY(-6deg);
+	border-radius: 0 0 3rem 0;
+	box-shadow: 0px 5px 3px 0px rgba(0,0,0,.2); 
+}
+
+.gift h3 {
+	font-size: 5.5rem;
+	color: #93a6b1;
+	font-weight: 400;
+	padding-bottom: 0;
+	z-index: 999;
+}
+
+.gift h4 {
+	font-size: 2rem;
+	font-weight: 400;
+	color: #9a9fb6;
+	border-top: 2px solid #9a9fb6;
+	margin-left: 3rem;
+	margin-right: 15rem;
+	margin-top: -.5rem;
+	padding-bottom: 3rem;
+}
+
+.gift p {
+	width: 95%;
+	font-size: 2rem;
+	color: #93a6b1;
+	line-height: 5rem;
+	margin-bottom: 6rem;
+}
+
+
+.gift a {
+	color: #93a6b1;
+	border: 2px solid #93a6b1;
+	border-radius: 1rem;
+	text-decoration: none;
+	font-size: 2rem;
+	padding: .5rem 4rem;
+	transition: .5s ease-in-out;
+}
+
+.gift a:hover {
+	border-radius: 3rem;
+	background-color: #93a6b1;
+	color: #dadcdb;
+}
+
+/*END THE GIFT SECTION STYLING*/
+
+/*BEGIN FOOTER SECTION STYLING*/
+
+footer {
+	background-color: #dadcdb;
+	height: 25rem;
+	padding-top: 15rem;
+	text-align: center;
+}
+
+footer h4 {
+	font-size: 2rem;
+	font-weight: 400;
+	color: #9a9fb6;
+}
+
+footer ul {
+	list-style-type: none;
+	/*display: inline-block;*/
+}
+
+footer ul li {
+	display: inline-block;
+	padding-right: 2rem;
+	padding-bottom: 1rem;
+}
+
+footer ul li:last-child {
+	padding-right: 0;
+}
+
+footer ul li a {
+	text-decoration: none;
+	font-size: 2rem;
+	
+	margin: 0 auto;
+}
+
+/*END FOOTER SECTION STYLING*/
