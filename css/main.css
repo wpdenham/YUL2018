@@ -18,8 +18,6 @@
 	/*background-color: #403e4e;*/
 }
 
-
-
 .container {
 	width: 80%;
 	margin: 0 auto;
@@ -35,6 +33,7 @@ nav {
 	background-color: rgba(154,159,182,.7);
 	box-shadow: 0px 2px 2px rgba(0,0,0,.4);
 	position: fixed;
+	z-index: 99;
 }
 
 nav img {
@@ -93,6 +92,8 @@ nav ul li a:hover {
 	background-blend-mode: soft-light;
 	background-size: cover;
 	background-position: center;
+	position: relative;
+
 }
 
 .hero h1 {
@@ -105,11 +106,323 @@ nav ul li a:hover {
 	padding-bottom: 3rem;
 }
 
+.options {
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 1fr 1fr 1fr;
+	    grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 7rem;
+}
+
 .hero a {
-	float: left;
-	width: 15%;
+	border: 1px solid red;
+	height: auto;
 	font-size: 3rem;
 	color: #dadcdb;
 }
 
 /*END HERO STYLING*/
+
+/*BEGIN INTRO SECTION STYLING*/
+
+/*.intro::before {
+	content: '';
+	width: 100%;
+	height: 20%;
+	background-color: #dadcdb;
+	position: absolute;
+	z-index: 1;
+	top: 0%;
+	-webkit-transform-origin: left top;
+	        transform-origin: left top;
+	-webkit-transform: skewY(-2deg);
+	        transform: skewY(-2deg);
+}*/
+
+.intro {
+	background-color: #dadcdb;
+	background-image: url(../assets/range1.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-blend-mode: soft-light;
+	background-position: bottom bottom;
+	height: auto;
+	padding: 7rem 0 15rem 0;
+	position: relative;
+}
+
+/*.intro::before {
+	content: '';
+	width: 100%;
+	height: 12rem;
+	background-color: #dadcdb;
+	position: absolute;
+	left: 0;
+	z-index: 1;
+	top: 0;
+	-webkit-transform-origin: top left;
+	        transform-origin: top left;
+	-webkit-transform: skewY(-3deg);
+	        transform: skewY(-3deg);
+}*/
+
+
+.intro h3 {
+	font-size: 5.5rem;
+	font-weight: 400;
+	color: #403e4e;
+	text-align: center;
+	padding-bottom: 5rem;
+	position: relative;
+	z-index: 4;
+}
+
+
+.content {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 4rem;
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.content h4 {
+	font-size: 2.5rem;
+	font-weight: 400;
+	color: #403e4e;
+	text-align: center;
+	padding-bottom: 5rem;
+	text-decoration: underline;
+	padding: 1rem 0;
+}
+
+.content p {
+	font-size: 1.7rem;
+	color: #93a6b1;
+	width: 90%;
+	margin: 0 auto;
+	line-height: 2.5rem;
+}
+
+/*END INTRO SECTION STYLING*/
+
+/*BEGIN MAIN SECTION STYLING*/
+
+.main h3 {
+	font-size: 5.5rem;
+	color: #93a6b1;
+	font-weight: 400;
+	padding-bottom: 0;
+	z-index: 999;
+}
+
+.main h4 {
+	font-size: 2rem;
+	font-weight: 400;
+	color: #9a9fb6;
+	border-top: 2px solid #9a9fb6;
+	margin-left: 3rem;
+	margin-right: 15rem;
+	margin-top: -.5rem;
+	padding-bottom: 3rem;
+}
+
+.main p {
+	width: 95%;
+	font-size: 2rem;
+	color: #93a6b1;
+	line-height: 5rem;
+}
+
+p.available {
+	font-size: 1.5rem;
+	color: #9a9fb6;
+	line-height: 2rem;
+	padding-top: 10rem;
+	padding-bottom: 2rem;
+}
+
+.main a {
+	color: #93a6b1;
+	border: 2px solid #93a6b1;
+	border-radius: 1rem;
+	text-decoration: none;
+	font-size: 2rem;
+	padding: .5rem 4rem;
+	transition: .5s ease-in-out;
+}
+
+.main a:hover {
+	border-radius: 3rem;
+	background-color: #93a6b1;
+	color: #dadcdb;
+}
+
+/*END MAIN SECTION STYLING*/
+
+/*BEGIN THE CABIN SECTION STYLING*/
+
+.cabinmain {
+	background-color: #93a6b1;
+	background-image: url(../assets/cabin1.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-blend-mode: soft-light;
+	background-position: bottom bottom;
+	padding: 5rem 0;
+}
+
+.cabin::before {
+	content: '';
+	width: 100%;
+	height: 15rem;
+	background-color: #dadcdb;
+	position: absolute;
+	top: -5rem;
+	left: 0;
+	-webkit-transform-origin: bottom left ;
+	        transform-origin: bottom left ;
+	-webkit-transform: skewY(-5deg);
+	        transform: skewY(-5deg);
+	        border-radius: 3rem 0 0 0;
+}
+
+.cabin {
+	width: 40%;
+	background-color: #dadcdb;
+	padding: 9rem 3rem 12rem 6rem;
+	padding-left: 6rem;
+	position: relative;
+}
+
+.cabin::after {
+	content: '';
+	width: 100%;
+	height: 15rem;
+	background-color: #dadcdb;
+	position: absolute;
+	bottom: -5rem;
+	left: 0;
+	-webkit-transform-origin: top left ;
+	        transform-origin: top left ;
+	-webkit-transform: skewY(5deg);
+	        transform: skewY(5deg);
+	border-radius: 0 0 0 3rem;
+}
+
+/*END THE CABIN SECTION STYLING*/
+
+/*BEGIN THE SLOPES SECTION STYLING*/
+
+.slopesmain {
+	background-color: #403e4e;
+	background-image: url(../assets/slopes1.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	/*background-attachment: fixed;*/
+	background-blend-mode: soft-light;
+	background-position: bottom bottom;
+	padding: 5rem 0;
+}
+
+.slopes::before {
+	content: '';
+	width: 100%;
+	height: 15rem;
+	background-color: #dadcdb;
+	position: absolute;
+	top: -5rem;
+	left: 0;
+	-webkit-transform-origin: bottom right;
+	        transform-origin: bottom right  ;
+	-webkit-transform: skewY(5deg);
+	        transform: skewY(5deg);
+	        border-radius: 0 3rem 0 0;
+}
+
+.slopes {
+	margin-left: 90rem;
+	box-shadow: 0px 5px 5px rgba(0,0,0,.4);
+	width: 40%;
+	background-color: #dadcdb;
+	padding: 9rem 3rem 12rem 6rem;
+	padding-left: 6rem;
+	position: relative;
+}
+
+.slopes::after {
+	content: '';
+	width: 100%;
+	height: 15rem;
+	background-color: #dadcdb;
+	position: absolute;
+	bottom: -5rem;
+	left: 0;
+	-webkit-transform-origin: right top ;
+	        transform-origin: right top ;
+	-webkit-transform: skewY(-5deg);
+	        transform: skewY(-5deg);
+	border-radius: 0 0 3rem 0;
+}
+
+/*END THE SLOPES SECTION STYLING*/
+
+
+/*BEGIN THE TOWN SECTION STYLING*/
+
+.townmain {
+	background-color: #93a6b1;
+	background-image: url(../assets/city1.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-blend-mode: soft-light;
+	background-position: bottom bottom;
+	padding: 5rem 0;
+	
+}
+
+.town::before {
+	content: '';
+	width: 100%;
+	height: 15rem;
+	background-color: #dadcdb;
+	position: absolute;
+	top: -5rem;
+	left: 0;
+	-webkit-transform-origin: bottom left ;
+	        transform-origin: bottom left ;
+	-webkit-transform: skewY(-5deg);
+	        transform: skewY(-5deg);
+	        border-radius: 3rem 0 0 0;
+}
+
+.town {
+	width: 40%;
+	background-color: #dadcdb;
+	padding: 9rem 3rem 12rem 6rem;
+	padding-left: 6rem;
+	position: relative;
+}
+
+.town::after {
+	content: '';
+	width: 100%;
+	height: 15rem;
+	background-color: #dadcdb;
+	position: absolute;
+	bottom: -5rem;
+	left: 0;
+	-webkit-transform-origin: top left ;
+	        transform-origin: top left ;
+	-webkit-transform: skewY(5deg);
+	        transform: skewY(5deg);
+	border-radius: 0 0 0 3rem;
+}
+
+/*END THE TOWN SECTION STYLING*/}}
