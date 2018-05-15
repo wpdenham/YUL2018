@@ -357,7 +357,7 @@ p.available {
 	border-top: 2px solid #9a9fb6;
 	margin-left: 3rem;
 	margin-right: 15rem;
-	margin-top: -.5rem;
+	margin-top: .2rem;
 	padding-bottom: 3rem;
 }
 
@@ -478,7 +478,7 @@ p.available {
 	border-top: 2px solid #9a9fb6;
 	margin-left: 3rem;
 	margin-right: 15rem;
-	margin-top: -.5rem;
+	margin-top: .2rem;
 	padding-bottom: 3rem;
 }
 
@@ -600,7 +600,7 @@ p.available {
 	border-top: 2px solid #9a9fb6;
 	margin-left: 3rem;
 	margin-right: 15rem;
-	margin-top: -.5rem;
+	margin-top: .2rem;
 	padding-bottom: 3rem;
 }
 
@@ -695,10 +695,10 @@ p.available {
 .gift::after {
 	content: '';
 	width: 100%;
-	height: 15rem;
+	height: 17rem;
 	background-color: #dadcdb;
 	position: absolute;
-	bottom: -5rem;
+	bottom: -10rem;
 	left: 0;
 	-webkit-transform-origin: right top ;
 	        transform-origin: right top ;
@@ -723,7 +723,7 @@ p.available {
 	border-top: 2px solid #9a9fb6;
 	margin-left: 3rem;
 	margin-right: 15rem;
-	margin-top: -.5rem;
+	margin-top: .2rem;
 	padding-bottom: 3rem;
 }
 
@@ -808,5 +808,77 @@ footer ul li a {
 /*--------END TOWN EXPERIENCE PAGE STYLING--------*/
 
 /*--------BEGIN CONTACT US PAGE STYLING--------*/
+
+.contacthero {
+	height: 80rem;
+	background: #403e4e;
+	background-image: url(../assets/road2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-blend-mode: soft-light;
+	background-position: center;
+}
+
+
+.agentsintro {
+	height: auto;
+	padding: 6rem 0;
+	background-color: #dadcdb;
+}
+
+.agentscontent h3 {
+	font-size: 5.5rem;
+	font-weight: 400;
+	color: #403e4e;
+	text-align: center;
+	padding-bottom: 5rem;
+}
+
+.agents {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-column-gap: 4rem;
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.agents img {
+	border-radius: 50%;
+}
+
+.agents h4 {
+	font-size: 3rem;
+	font-weight: 400;
+	margin: 2rem 0;
+	color: #93a6b1;
+}
+
+.agents p {
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+}
+
+.guaranteeintro {
+	height: auto;
+	padding: 6rem 0;
+	background-color: #93a6b1;
+}
+
+.guaranteecontent h3 {
+	font-size: 5.5rem;
+	font-weight: 400;
+	color: #403e4e;
+	text-align: center;
+	padding-bottom: 5rem;
+}
+
+.contactfooter {
+	padding: 2rem;
+	height: auto;
+}
 
 /*--------END CONTACT US PAGE STYLING--------*/
