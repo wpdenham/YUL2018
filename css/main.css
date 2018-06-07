@@ -798,22 +798,22 @@ footer ul li a {
 /*--------BEGIN EXPERIENCES PAGE STYLING--------*/
 
 .expintro {
-	height: 64rem;
+	height: 65rem;
 	background: #ccc;
 }
 
 .expintro:nth-child(even) {
-	height: 64rem;
+	height: 65rem;
 	background: #fff;
 }
 
-.expintro img {
-	height: auto;
+.slides img {
+	height: 100%;
 	width: 50%;
 	float: left;
 }
 
-.expintro:nth-child(even) img {
+.slides:nth-child(even) img {
 	width: 50%;
 	float: right;
 }
@@ -899,6 +899,69 @@ footer ul li a {
 	color: #9a9fb6;
 }
 
+.faqs {
+	height: auto;
+	padding: 6rem 0 6rem 0;
+	background-color: #93a6b1;
+}
+
+.faqs h3 {
+	font-size: 5.5rem;
+	font-weight: 400;
+	color: #dadcdb;
+	text-align: center;
+}
+
+.faqs h5 {
+	margin: 0 auto;
+	width: 60%;
+	font-size: 2rem;
+	font-weight: 400;
+	color: #403e4e;
+	text-align: center;
+	padding: 2rem 0 6rem 0;
+}
+
+.faqscontent {
+	width: 100%;
+	text-align: center;
+}
+
+.questions {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 1fr 1fr 1fr 1fr;
+	    grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-column-gap: 3rem;
+	width: 90%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.questioncontent {
+	border: 2px solid #6f838e;
+	background-color: rgba(192,215,226,.3);
+	border-radius: 1rem;
+	padding: .5rem;
+	margin-bottom: 3rem;
+	box-shadow: 0 2px 3px 1px rgba(0,0,0,.2);  
+}
+
+.questioncontent h4 {
+	font-size: 2rem;
+	font-weight: 400;
+	margin: 1rem 0 ;
+	color: #dadcdb;
+}
+
+.questioncontent p {
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+	color: #403e4e;
+	width: 90%;
+	margin: 0 auto 1rem auto;
+}
+
 .contact {
 	display: block;
 	margin: .25rem 0 1.25rem 0;
@@ -915,11 +978,11 @@ footer ul li a {
 .contactfooter {
 	padding: 2rem;
 	height: auto;
-	background: #9a9fb6;
+	background: #dadcdb;
 }
 
 .contactfooter h4 {
-	color: #dadcdb;
+	color: #93a6b1;
 }
 
 /*--------END CONTACT US PAGE STYLING--------*/
