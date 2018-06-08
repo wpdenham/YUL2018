@@ -797,29 +797,136 @@ footer ul li a {
 
 /*--------BEGIN EXPERIENCES PAGE STYLING--------*/
 
+
+
+
+
 .expintro {
-	height: 65rem;
-	background: #ccc;
+	padding: 30rem 0 20rem 0;
+	height: auto;
+	background: #dadcdb;
+	position: relative;
+}
+/*
+.expintro h3 {
+	font-size: 25rem;
+	font-family: 'Shadows Into Light Two', cursive;
+	float: right;
+	opacity: .2;
+	mix-blend-mode: overlay;
+	margin: -30rem 2rem 0 0;
+}*/
+
+.expcontent {
+	width: 85%;
+	margin: 0 auto;
 }
 
-.expintro:nth-child(even) {
-	height: 65rem;
-	background: #fff;
+.slides {
+	width: 60%;
+	height: 55rem;
+	overflow: hidden;
+	z-index: 0;
+	border-radius: 2rem;
+	box-shadow: 0px 3px 2px 0px rgba(0,0,0,.3); 
 }
 
-.slides img {
-	height: 100%;
-	width: 50%;
-	float: left;
-}
-
-.slides:nth-child(even) img {
-	width: 50%;
+.slopeslide {
 	float: right;
 }
 
-.cabinright {
-	width: 50%;
+.slides img {
+	width: 100%;
+}
+
+.cabinright	{
+	width: 42%;
+	float: right;
+	background: #93a6b1;
+	height: 50rem;
+	margin: -40rem 7rem 15rem 0;
+	position: relative;
+	border: 2px solid #403e4e;
+	border-radius: 2rem;
+	box-shadow: 0px 3px 2px 0px rgba(0,0,0,.3); 
+}
+
+.cabinright h2 {
+	font-size: 5.5rem;
+	font-weight: 400;
+	color: #dadcdb;
+	text-align: left;
+	margin: 2rem 2rem 0 3rem;
+}
+
+.cabinright p {
+	width: 80%;
+	font-size: 2rem;
+	font-weight: 300;
+	color: black;
+	text-align: left;
+	margin: 1rem 2rem 2rem 5rem;
+	line-height: 3rem;
+}
+
+.slopesleft	{
+	width: 42%;
+	float: left;
+	background: #93a6b1;
+	height: 50rem;
+	margin: -40rem 0 15rem 7rem;
+	position: relative;
+	border: 2px solid #403e4e;
+	border-radius: 2rem;
+	box-shadow: 0px 3px 2px 0px rgba(0,0,0,.3); 
+}
+
+.slopesleft h2 {
+	font-size: 5.5rem;
+	font-weight: 400;
+	color: #dadcdb;
+	text-align: left;
+	margin: 2rem 2rem 0 3rem;
+}
+
+.slopesleft p {
+	width: 80%;
+	font-size: 2rem;
+	font-weight: 300;
+	color: black;
+	text-align: left;
+	margin: 1rem 2rem 2rem 5rem;
+	line-height: 3rem;
+}
+
+.townright	{
+	width: 42%;
+	float: right;
+	background: #93a6b1;
+	height: 50rem;
+	margin: -40rem 7rem 15rem 0;
+	position: relative;
+	border: 2px solid #403e4e;
+	border-radius: 2rem;
+	box-shadow: 0px 3px 2px 0px rgba(0,0,0,.3); 
+}
+
+.townright h2 {
+	font-size: 5.5rem;
+	font-weight: 400;
+	color: #dadcdb;
+	text-align: left;
+	margin: 2rem 2rem 0 3rem;
+}
+
+.townright p {
+	width: 80%;
+	font-size: 2rem;
+	font-weight: 300;
+	color: black;
+	text-align: left;
+	margin: 1rem 2rem 2rem 5rem;
+	line-height: 3rem;
 }
 
 /*--------END EXPERIENCES PAGE STYLING--------*/
@@ -827,16 +934,56 @@ footer ul li a {
 /*--------BEGIN CONTACT US PAGE STYLING--------*/
 
 .contacthero {
-	height: 80rem;
+	height: 45rem;
 	background: #403e4e;
 	background-image: url(../assets/road2.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	background-blend-mode: soft-light;
-	background-position: center;
+	background-position: center center;
 }
 
+.contherocontent {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 1rem;
+	width: 70%;
+	margin: 2rem auto;
+	text-align: center;
+	border-radius: 2rem;
+	padding: 1.5rem 0;
+	background-color: rgba(255,255,255,.2);
+	box-shadow: 0px 3px 2px 0px rgba(0,0,0,.1);
+}
+
+.contacthero h3 {
+	font-size: 5.5rem;
+	font-weight: 400;
+	color: #dadcdb;
+	text-align: center;
+	padding: 10rem 0 2rem 0;
+	display: block;
+}
+
+.contherocontent h4 {
+	font-size: 2.25rem;
+	font-weight: 500;
+	margin: 1rem 0 1rem 0 ;
+	color: #403e4e;
+}
+
+.contherocontent a {
+	font-size: 1.7rem;
+	font-weight: 400;
+	margin: 1rem 0 1rem 0 ;
+	color: #dadcdb;
+	display: block;
+	letter-spacing: .15rem;
+	text-transform: uppercase;
+}
 
 .agentsintro {
 	height: auto;
@@ -902,8 +1049,9 @@ footer ul li a {
 .faqs {
 	height: auto;
 	padding: 6rem 0 6rem 0;
-	background-color: #93a6b1;
-}
+	background: rgb(147,166,177); /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgb(147,166,177) 0%,rgb(113,139,153) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	}
 
 .faqs h3 {
 	font-size: 5.5rem;
@@ -986,3 +1134,4 @@ footer ul li a {
 }
 
 /*--------END CONTACT US PAGE STYLING--------*/
+}
