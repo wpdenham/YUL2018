@@ -19,13 +19,14 @@
 	box-sizing: border-box;
 	font-family: 'Open Sans', sans-serif;
 	/*background-color: #403e4e;*/
-	overflow-x: hidden;
+	background-repeat: no-repeat;
 }
 
 html {
 	height: auto;
+	background-repeat: no-repeat;
 	background: #6c6d8b;
-    background: linear-gradient(#6c6d8b 17%, #c885d0 35%, #35365f 99%);
+    background: linear-gradient(#6c6d8b 5%, #c885d0 35%, #35365f 99%);
 }
 
 .container {
@@ -70,7 +71,7 @@ hr {
 	padding: 1rem 4rem;
 	-webkit-appearance: none;
 	border: none;
-	border-radius: 2rem;
+	border-radius: 1.5rem;
 	box-shadow: 0 2px 2px rgba(0,0,0,.4);
 	cursor: pointer;
 	transition: .3s ease-in-out;
@@ -88,6 +89,30 @@ hr {
 	text-transform: uppercase;
 	color: #dadcdb;
 	text-shadow: 0 2px 1px rgba(0,0,0,.3);
+}
+
+.btnsm {
+	width: auto;
+	height: auto;
+	padding: .5rem 9rem;
+	border: none;
+	border-radius: 1.5rem;
+	box-shadow: 0 2px 2px rgba(0,0,0,.2);
+	cursor: pointer;
+	background-color: #a354a1;
+	transition: .3s ease-in-out;
+}
+
+.btnsm:hover {
+	-webkit-transform: translateY(.2rem);
+	        transform: translateY(.2rem);
+}
+
+.btnsm a {
+	font-family: 'Oswald', sans-serif; 
+	font-size: 2.5rem;
+	color: #dadcdb; 
+	text-decoration: none;
 }
 
 /*CUSTOM SCROLLBAR STYLING*/
@@ -129,8 +154,9 @@ body::-webkit-scrollbar-corner {
 /*NAV STYLING*/
 
 nav {
-	position: fixed;
+	position: absolute;
 	height: auto;
+	z-index: 9999;
 }
 
 nav img {
@@ -225,20 +251,20 @@ footer ul li a {
 
 /*ABOUT SECTION*/
 
-.about {
+.aboutintro {
 	text-align: center;
 	padding-bottom: 8rem;
 }
 
-.about .subtext {
+.aboutintro .subtext {
 	padding-bottom: 3rem;
 }
 
-.about a {
+.aboutintro a {
 	padding: 2rem;
 }
 
-.about a i {
+.aboutintro a i {
 	color: #575a78;
 }
 
@@ -249,15 +275,77 @@ footer ul li a {
 	padding-bottom: 6rem;
 }
 
+.testimonial img {
+	width: 100%;
+}
+
 /*DESTINATIONS SECTION*/
 
 .destinations {
 	padding-top: 4rem;
+	width: 100%;
 }
+
+.destimg img {
+	border-radius: 0 2rem 2rem 0;
+	box-shadow: 0px 2px 2px rgba(0,0,0,.4);
+}
+
+.destimgright img {
+	border-radius: 2rem 0 0 2rem;
+	box-shadow: 0px 2px 2px rgba(0,0,0,.4);
+}
+
+.destcontent {
+	height: 67rem;
+	width: 100%;
+	background-image: url(../assets/cabinright.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+
+.destcontent h3 {
+	font-family: 'Oswald', sans-serif; 
+	font-size: 6rem;
+	color: #a354a1;
+	padding-top: 5rem;
+}
+
+.destcontent p {
+	margin: 0 auto;
+	width: 80%;
+	font-size: 2rem;
+	font-weight: 400;
+	color: #a354a1;
+	text-align: center;
+	padding: 2rem 0 4rem 0;
+	line-height: 3.5rem;
+}
+
+.destcontent.right {
+	margin: 10rem 0 0 -14rem;
+}
+
+.destcontent.left {
+	margin: 10rem 0 0 14rem;
+	z-index: 99;
+}
+
+.destination {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 1fr 1fr;
+	    grid-template-columns: 1fr 1fr;
+	grid-gap: 0;
+}
+
 
 /*START PACKING SECTION*/
 
 .packing {
+	position: relative;
+	padding-top: 6rem;
 	text-align: center;
 }
 
@@ -265,14 +353,149 @@ footer ul li a {
 	margin-bottom: 9rem;
 }
 
+/*ABOUT FOOTER*/
+
+.aboutfooter {
+	position: relative;
+}
+
 .climblow img {
-	display: none;
 	position: absolute;
-	top: 100%;
+	width: 21%;
+	bottom: -30%;
 	right: 0;
 }
 
-/*-------END CONTACT PAGE-------*/
+/*-------END ABOUT PAGE-------*/
+
+/*-------BEGIN EXPERIENCES PAGE-------*/
+
+.expbody {
+	background-color: #4b8d9a;
+}
+
+/*EXPERIENCES SECTION*/
+
+.expconth3 {
+	font-family: 'Oswald', sans-serif; 
+	font-size: 6rem;
+	color: #30707c;
+}
+
+/*THE CABIN HERO*/
+
+.expcabinhero {
+	height: 85rem;
+	background-image: url(../assets/expcabinimg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: normal;
+	position: relative;
+}
+.expcabinh1  {
+	width: 30%;
+	font-family: 'Oswald', sans-serif; 
+	font-size: 9rem;
+	letter-spacing: .5rem;
+	color: #dadcdb;
+	text-align: center;
+	position: absolute;
+	top: 35%;
+	left: 57%;
+	padding: 0 4rem 1rem 4rem; 
+	border: 4px solid #dadcdb;
+	border-radius: 1.5rem;
+
+}
+
+/*THE CABIN CONTENT*/
+
+.expcabincont {
+	height: 80rem;
+	text-align: center;
+}
+
+.expcabincont hr {
+	border: 2px solid #dadcdb;
+}
+
+/*THE SLOPES HERO*/
+
+.expslopeshero {
+	height: 110rem;
+	background-image: url(../assets/expslopesimg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: multiply;
+	background-position: bottom;
+	margin-bottom: 5rem;
+	position: relative;
+}
+
+.expslopesh1  {
+	width: 30%;
+	font-family: 'Oswald', sans-serif; 
+	font-size: 9rem;
+	letter-spacing: .5rem;
+	color: #dadcdb;
+	text-align: center;
+	position: absolute;
+	top: 45%;
+	right: 57%;
+	padding: 0 4rem 1rem 4rem; 
+	border: 4px solid #dadcdb;
+	border-radius: 1.5rem;
+}
+
+/*THE SLOPES CONTENT*/
+
+.expslopescont {
+	height: 80rem;
+	text-align: center;
+}
+
+.expslopescont hr {
+	border: 2px solid #dadcdb;
+}
+
+/*THE POINT HERO*/
+
+.exppointhero {
+	height: 110rem;
+	background-image: url(../assets/exppointimg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: multiply;
+	position: relative;
+}
+
+.exppointh1  {
+	width: 35%;
+	font-family: 'Oswald', sans-serif; 
+	font-size: 9rem;
+	letter-spacing: .5rem;
+	color: #dadcdb;
+	text-align: center;
+	position: absolute;
+	top: 45%;
+	left: 52%;
+	padding: 0 4rem 1rem 4rem; 
+	border: 4px solid #dadcdb;
+	border-radius: 1.5rem;
+}
+
+/*THE POINT CONTENT*/
+
+.exppointcont {
+	height: 80rem;
+	text-align: center;
+}
+
+.exppointcont hr {
+	border: 2px solid #dadcdb;
+}
+
+/*-------END EXPERIENCES PAGE-------*/
 
 /*-------BEGIN CONTACT PAGE-------*/
 
@@ -297,7 +520,7 @@ footer ul li a {
 
 .talkcontent {
 	width: 65%;
-	background-color: rgba(218,220,219, .65);
+	background-color: rgba(218,220,219, .8);
 	border-radius: 2rem;
 	padding: 4rem 0;
 	box-shadow: 0 2px 2px rgba(0,0,0,.4);
@@ -316,14 +539,14 @@ footer ul li a {
 
 .talkcontent h4 {
 	font-size: 2.25rem;
-	font-weight: 500;
+	font-weight: 700;
 	margin: 1rem 0 1rem 0 ;
 	color: #4b8d9a;
 }
 
 .talkcontent a {
 	font-size: 1.7rem;
-	font-weight: 400;
+	font-weight: 700;
 	margin: 1rem 0 1rem 0 ;
 	color: #4b8d9a;
 	display: block;
