@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('.slides').slick({
+  $('.slide').slick({
   	dots: false,
     arrows: false,
   	speed: 2000,
@@ -9,6 +9,8 @@ $(document).ready(function(){
   	pauseOnHover: false,
   	pauseOnFocus: false,
   	cssEase: 'ease-in-out',
-    infinite: true,
+    infinite: false,
+    variableWidth: false,
+    // adaptiveHeight: true,
   });
 });

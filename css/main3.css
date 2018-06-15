@@ -1,0 +1,486 @@
+/*SITE COLOR PALLETE
+
+	light grey - #dadcdb;
+	bright purple - #a354a1;
+	dark mute purple - #575a78;
+	bright pink underline - #f78deb;
+	light blue grey - #9a9fb6;
+	light blue green - #6f838e;
+	bright teal blue - #4b8d9a;
+	dark blue (footer) - #29293c;
+*/
+
+/*GENERAL STYLING*/
+
+*,html,body {
+	padding: 0;
+	margin: 0;
+	font-size: 10px;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+	/*background-color: #403e4e;*/
+	background-repeat: no-repeat;
+}
+
+html {
+	height: auto;
+	background-repeat: no-repeat;
+	background: #6c6d8b;
+    background: linear-gradient(#6c6d8b 5%, #c885d0 35%, #35365f 99%);
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+/*GENERAL ELEMENT STYLES*/
+
+h2 {
+	font-family: 'Oswald', sans-serif; 
+	font-size: 7rem;
+	color: #dadcdb;
+	text-align: center;
+	text-shadow: 0 2px 2px rgba(0,0,0,.4);
+	letter-spacing: .15rem;
+	padding-top: 1rem;
+}
+
+.subtext {
+	margin: 0 auto;
+	width: 70%;
+	font-size: 2rem;
+	font-weight: 400;
+	color: #dadcdb;
+	text-align: center;
+	padding: 2rem 0 6rem 0;
+	line-height: 3rem;
+}
+
+hr {
+	width: 7%;
+	margin: 0 auto;
+	color: #f78deb;
+	border: 2px solid #f78deb;
+	border-radius: 1rem;
+}
+
+.btnmed {
+	background-color: #4b8d9a;
+	width: auto;
+	padding: 1rem 4rem;
+	-webkit-appearance: none;
+	border: none;
+	border-radius: 1.5rem;
+	box-shadow: 0 2px 2px rgba(0,0,0,.4);
+	cursor: pointer;
+	transition: .3s ease-in-out;
+}
+
+.btnmed:hover {
+	-webkit-transform: translateY(.2rem);
+	        transform: translateY(.2rem);
+}
+
+.btnmed a {
+	font-size: 2rem;
+	font-weight: 800;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #dadcdb;
+	text-shadow: 0 2px 1px rgba(0,0,0,.3);
+}
+
+.btnsm {
+	width: auto;
+	height: auto;
+	padding: .5rem 9rem;
+	border: none;
+	border-radius: 1.5rem;
+	box-shadow: 0 2px 2px rgba(0,0,0,.2);
+	cursor: pointer;
+	background-color: #a354a1;
+	transition: .3s ease-in-out;
+}
+
+.btnsm:hover {
+	-webkit-transform: translateY(.2rem);
+	        transform: translateY(.2rem);
+}
+
+.btnsm a {
+	font-family: 'Oswald', sans-serif; 
+	font-size: 2.5rem;
+	color: #dadcdb; 
+	text-decoration: none;
+}
+
+/*CUSTOM SCROLLBAR STYLING*/
+
+/* width */
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+    background: #9a9fb6; 
+    border-radius: 55px;
+    
+}
+
+body::-webkit-scrollbar-button {
+	display: none;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+    background: #403e4e; 
+    border-radius: 55px;
+    
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+    background: #403e4e; 
+    border-radius: 55px;
+}
+
+body::-webkit-scrollbar-corner {
+    background: #403e4e; 
+    border-radius: 55px;
+}
+
+/*NAV STYLING*/
+
+nav {
+	position: absolute;
+	height: auto;
+	z-index: 9999;
+}
+
+nav img {
+	float: left;
+	padding: 1.5rem;
+}
+
+nav ul {
+	float: right;
+	list-style-type: none;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 2.5rem 5rem 0 0;
+}
+
+nav ul li:nth-child(3) {
+	padding-right: 0;
+}
+
+nav ul li a {
+	color: #dadcdb;
+	font-size: 1.55rem;
+	text-decoration: none;
+}
+
+.active {
+	font-weight: 600;
+	font-style: italic;
+}
+
+/*FOOTER STYLING*/
+
+footer {
+	height: 10rem;
+	background-color: #29293c;
+	text-align: center;
+}
+
+footer h4 {
+	font-size: 2rem;
+	font-weight: 400;
+	color: #9a9fb6;
+}
+
+footer ul {
+	padding-top: 2rem;
+	list-style-type: none;
+
+}
+
+footer ul li {
+	display: inline-block;
+	padding-right: 2rem;
+	padding-bottom: .2rem;
+}
+
+footer ul li:last-child {
+	padding-right: 0;
+}
+
+footer ul li a {
+	text-decoration: none;
+	font-size: 2rem;
+	color: #4b8d9a;
+	margin: 0 auto;
+}
+
+/*-------BEGIN EXPERIENCES PAGE-------*/
+
+.expbody {
+	/*background-color: #4b8d9a;*/
+	background-repeat: no-repeat;
+	background: #6c6d8b;
+    background: linear-gradient(#51acbc 0%,  #35365f 99%);
+}
+
+/*EXPERIENCES SECTION*/
+
+.expconth3 {
+	font-family: 'Oswald', sans-serif; 
+	font-size: 6rem;
+	color: #dadcdb;
+}
+
+/*THE CABIN HERO*/
+
+.expcabinhero {
+	height: 85rem;
+	background-image: url(../assets/expcabinimg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: normal;
+	position: relative;
+}
+.expcabinh1  {
+	width: 30%;
+	font-family: 'Oswald', sans-serif; 
+	font-size: 9rem;
+	letter-spacing: .5rem;
+	color: #c1e6f2;
+	text-align: center;
+	position: absolute;
+	top: 35%;
+	left: 57%;
+	padding: 0 4rem 1rem 4rem; 
+	border: 4px solid #c1e6f2;
+	border-radius: 1.5rem;
+	opacity: .5;
+	transition: .5s ease-in-out;
+}
+
+.expcabinh1:hover {
+	opacity: 1;
+}
+
+/*THE CABIN CONTENT*/
+
+.expcabincont {
+	height: 80rem;
+	text-align: center;
+}
+
+.expcabincont hr {
+	border: 2px solid #dadcdb;
+}
+
+.contmain {
+	width: 100%;
+	height: 55rem;
+	border: 1px solid red;
+	overflow: hidden;
+}
+
+.slide {
+	width: 50%;
+	border: 1px solid white;
+	position: relative;
+	border-radius: 1.5rem;
+}
+
+.slide img {
+	width: 100%;
+	border-radius: 1.5rem;
+}
+
+.slide div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	border-radius: 1.5rem;
+}
+
+.slide div {
+	-webkit-animation-name: slideIn;
+	        animation-name: slideIn;
+	-webkit-animation-duration: 16s;
+	        animation-duration: 16s;
+	-webkit-animation-delay: 0s;
+	        animation-delay: 0s;
+	-webkit-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+}
+
+.slide div:nth-child(2){
+	-webkit-animation-delay: 14s;
+	        animation-delay: 14s;
+}
+
+.slide div:nth-child(3){
+	-webkit-animation-delay: 28s;
+	        animation-delay: 28s;
+}
+
+.slide div:nth-child(4){
+	-webkit-animation-delay: 42s;
+	        animation-delay: 42s;
+}
+
+@-webkit-keyframes slideIn {
+	0% {
+		opacity: 0;
+		left: -100%;
+	}
+
+	20% {
+		opacity: 1;
+		left: 0%;
+	}
+
+	85% {
+		opacity: 1;
+		left: 100%
+	}
+
+	100% {
+		opacity: 0;
+		left: 100%;
+	}
+}
+
+@keyframes slideIn {
+	0% {
+		opacity: 0;
+		left: -100%;
+	}
+
+	20% {
+		opacity: 1;
+		left: 0%;
+	}
+
+	85% {
+		opacity: 1;
+		left: 0%
+	}
+
+	100% {
+		opacity: 0;
+		left: 100%;
+	}
+}
+
+.info {
+
+	border: 1px solid blue;
+}
+
+.info p {
+
+}
+
+/*THE SLOPES HERO*/
+
+.expslopeshero {
+	height: 110rem;
+	background-image: url(../assets/expslopesimg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: multiply;
+	background-position: bottom;
+	margin-bottom: 5rem;
+	position: relative;
+}
+
+.expslopesh1  {
+	width: 30%;
+	font-family: 'Oswald', sans-serif; 
+	font-size: 9rem;
+	letter-spacing: .5rem;
+	color: #4a879e;
+	text-align: center;
+	position: absolute;
+	top: 45%;
+	right: 57%;
+	padding: 0 4rem 1rem 4rem; 
+	border: 4px solid #4a879e;
+	border-radius: 1.5rem;
+	opacity: .5;
+	transition: .5s ease-in-out;
+}
+
+
+.expslopesh1:hover {
+	opacity: 1;
+}
+/*THE SLOPES CONTENT*/
+
+.expslopescont {
+	height: 80rem;
+	text-align: center;
+}
+
+.expslopescont hr {
+	border: 2px solid #dadcdb;
+}
+
+/*THE POINT HERO*/
+
+.exppointhero {
+	height: 110rem;
+	background-image: url(../assets/exppointimg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: multiply;
+	position: relative;
+}
+
+.exppointh1  {
+	width: 35%;
+	font-family: 'Oswald', sans-serif; 
+	font-size: 9rem;
+	letter-spacing: .5rem;
+	color: #947ea0;
+	text-align: center;
+	position: absolute;
+	top: 45%;
+	left: 52%;
+	padding: 0 4rem 1rem 4rem; 
+	border: 4px solid #947ea0;
+	border-radius: 1.5rem;
+	opacity: .5;
+	transition: .5s ease-in-out;
+}
+
+.exppointh1:hover {
+	opacity: 1;
+}
+
+/*THE POINT CONTENT*/
+
+.exppointcont {
+	height: 80rem;
+	text-align: center;
+}
+
+.exppointcont hr {
+	border: 2px solid #dadcdb;
+}
+
+/*-------END EXPERIENCES PAGE-------*/
+
+
+
+/*-------END CONTACT PAGE-------*/
