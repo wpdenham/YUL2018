@@ -536,12 +536,16 @@ footer ul li a {
 
 /*THE CABIN CONTENT*/
 
-.expcabincont {
+.expcont {
 	height: 80rem;
 	text-align: center;
 }
 
-.expcabincont hr {
+.expcontlast {
+	margin-bottom: 5rem;
+}
+
+.expcont hr {
 	border: 2px solid #dadcdb;
 }
 
@@ -552,34 +556,132 @@ footer ul li a {
 	display: grid;
 	-ms-grid-columns: 1fr 1fr;
 	    grid-template-columns: 1fr 1fr;
-	border: 1px solid red;
+	grid-column-gap: 1rem;
 }
 
 .slides {
-	width: 95%;
-	border: 1px solid white;
+	position: relative;
+}
+
+.slide {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
 	border-radius: 1.5rem;
-	overflow: hidden;
+	box-shadow: 0 2px 2px 1px rgba(0,0,0,.2);
 }
 
-.slides div {
-	width: 100%;
-	display: inline;
+
+.slide:nth-child(1) {
+	-webkit-animation-name: slideIn;
+	        animation-name: slideIn;
+	-webkit-animation-duration: 24s;
+	        animation-duration: 24s;
+	-webkit-animation-delay: 18s;
+	        animation-delay: 18s;
+	-webkit-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+	      
+}
+.slide:nth-child(2) {
+	-webkit-animation-name: slideIn;
+	        animation-name: slideIn;
+	-webkit-animation-duration: 24s;
+	        animation-duration: 24s;
+	-webkit-animation-delay: 12s;
+	        animation-delay: 12s;
+	-webkit-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+	        
+}
+.slide:nth-child(3) {
+	-webkit-animation-name: slideIn;
+	        animation-name: slideIn;
+	-webkit-animation-duration: 24s;
+	        animation-duration: 24s;
+	-webkit-animation-delay: 6s;
+	        animation-delay: 6s;
+	-webkit-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+	     
+}
+.slide:nth-child(4) {
+	-webkit-animation-name: slideIn;
+	        animation-name: slideIn;
+	-webkit-animation-duration: 24s;
+	        animation-duration: 24s;
+	-webkit-animation-delay: 0s;
+	        animation-delay: 0s;
+	-webkit-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+	       
 }
 
-.slides img {
-	width: 100%;
+
+
+@-webkit-keyframes slideIn {
+	0% {
+		opacity: 1;
+		
+	}
+
+	15% {
+		opacity: 1;
+	
+	}
+
+	25% {
+		opacity: 0;
+
+	}
+
+	90% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+
+	}
 }
 
+@keyframes slideIn {
+	0% {
+		opacity: 1;
+		
+	}
+
+	15% {
+		opacity: 1;
+	
+	}
+
+	25% {
+		opacity: 0;
+
+	}
+
+	90% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+
+	}
+}
 
 .info {
 	width: 100%;
+	float: right;
 }
 
 .info p {
-	width: 80%;
+	width: 90%;
 	margin: 0 auto;
 }
+
 /*THE SLOPES HERO*/
 
 .expslopeshero {
